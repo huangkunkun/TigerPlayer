@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    android:orientation="vertical">
+
+    <!--第1行-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/p1_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/apple" />
+
+        <ImageView
+            android:id="@+id/p2_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/banana" />
+
+        <ImageView
+            android:id="@+id/p3_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/cherry" />
+
+        <ImageView
+            android:id="@+id/p4_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/watermelon" />
+    </LinearLayout>
+    <!--第2行-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/p12_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/orange" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/money"/>
+
+        <ImageView
+            android:id="@+id/p5_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/kiwifruit" />
+    </LinearLayout>
+    <!--第3行-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/p11_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/kiwifruit" />
+
+        <TextView
+            android:id="@+id/money_tv"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:text="10000"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="30sp"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/p6_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/banana" />
+    </LinearLayout>
+    <!--第4行-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/p10_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/strawberry" />
+
+        <ImageView
+            android:id="@+id/p9_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/kiwifruit" />
+
+        <ImageView
+            android:id="@+id/p8_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/mango" />
+        <ImageView
+            android:id="@+id/p7_iv"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/apple" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_horizontal"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="赌博有害身心健康  (*^__^*)  下注务必小心谨慎"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <!--下注、开始按钮-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bet_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:text="下注"
+            android:textColor="#00ff00"
+            android:textSize="25sp" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/start_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:text="开始"
+            android:textColor="#00ff00"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+
+</LinearLayout>
